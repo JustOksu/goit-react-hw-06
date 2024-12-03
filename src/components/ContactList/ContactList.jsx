@@ -10,7 +10,7 @@ const ContactList = () => {
     <ul className={styles.contactList}>
       {contacts.map(({ id, name, number }) => (
         <li key={id}>
-          <Contact name={name} number={number} />
+          <Contact id={id} name={name} number={number} />{" "}
         </li>
       ))}
     </ul>
